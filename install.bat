@@ -1,1 +1,1 @@
-pyinstaller -F -i encryption.py
+pyinstaller -F encryption.py
