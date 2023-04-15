@@ -3,6 +3,7 @@
 /dist
 /*.spec
 /~*
+/install.bat
 
 #生成文件
 /encryption.txt

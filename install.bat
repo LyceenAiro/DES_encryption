@@ -1,1 +1,1 @@
-pyinstaller -F -i logo.ico start.py
+pyinstaller -F -i encryption.py
