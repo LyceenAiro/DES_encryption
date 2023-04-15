@@ -32,7 +32,7 @@ except:
     chars = string.ascii_letters + string.digits +string.punctuation
 
 #选择模式
-inp = input(f"·选择模式{i}\n[1]加密\n[2]解密\n选择:")
+inp = input(f"·选择模式{i}\n[1]加密模式\n[2]解密模式\n选择:")
 os.system("cls")
 if inp == "1":
     print(f"·加密模式{i}")
@@ -40,7 +40,7 @@ elif inp == "2":
     print(f"·解密模式{i},请保证使用的公钥与密钥对应")
 else:
     exit()
-    
+
 #输入文本和密钥
 file = input("输入文本:")
 password = input("输入密钥:")
