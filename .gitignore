@@ -1,0 +1,8 @@
+#构建文件
+/build
+/dist
+/*.spec
+/~*
+
+#生成文件
+/encryption.ini
