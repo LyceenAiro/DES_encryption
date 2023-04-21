@@ -25,6 +25,22 @@ try:
         except:
             ty += 1
     char = chars
+    #访问配置文件查找插入空格值
+    while ty <= len(p):
+        try:
+            if p[ty].split('=')[0].strip() == "Insert_Space":
+                space = int(p[ty].split('=')[1].strip())
+                if space <= len(chars-1):
+                    space_list = list(chars)
+                    space_list.insert(space,' ')
+                    chars = ''.join(space_list)
+                    del space
+                break
+            else:
+                ty += 1
+                continue
+        except:
+            ty += 1    
     del char,ty,p
 except:
     #当自定义公钥不存在时使用冗余公钥
